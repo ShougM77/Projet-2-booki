@@ -70,24 +70,20 @@ a {
     width: 60px;
     
 }
-
-.nav {
+.nav ul
+    {list-style-type: none;
+        padding: 0 50px;
+        display: flex;
     
 }
-
-.nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+.nav ul li{
+    margin-right: 20px;
+    
 }
-
-.nav ul li {
-    margin-left: 10px;
+.nav ul li a:hover {
+    border-top: 3px solid blue;
+    
 }
-
-
-
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
