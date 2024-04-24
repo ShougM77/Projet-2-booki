@@ -84,6 +84,33 @@ a {
     border-top: 3px solid blue;
     
 }
+
+/****** Bar ***********/
+
+.search-bar{
+    display: flex;
+    padding-bottom: 15px;
+    width: 377px;
+    height: 49px;
+}  
+.fa-location-dot{
+    font-size: 18px;
+    border-radius: 15PX 0PX 0PX 15px;
+    PADDING:15px;
+    background-color: #F2F2F2;
+}
+
+button{
+    background-color:#0065FC;
+    color: white;
+    border-radius: 0PX 15PX 15PX 0px;
+    border: 1px solid #0065FC;
+
+}
+.search-ville {
+    border: 1px solid #F2F2F2;
+
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
