@@ -233,9 +233,32 @@ margin-bottom: 15px;
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+/****** Activite ***********/
+.Activite{
+    display: grid;
+    margin-top: 33px;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
+}
 
+.Activite-title{
+    padding: 15px;
+}
+.Activite-title-cards{
+    font-size: 16px;
+    padding-left: 15px;
+}
+.Activite-cards img {
+    width: 297px;
+    height: 439px;
+    border-radius: 15px 15px 0 0;
+}
 
+.Activite-cards{
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
