@@ -81,7 +81,9 @@ a {
     
 }
 .nav ul li a:hover {
-    border-top: 3px solid blue;
+    border-top: 3px solid #0065FC;
+    width: 50%;
+
     
 }
 
@@ -90,8 +92,6 @@ a {
 .search-bar{
     display: flex;
     padding-bottom: 15px;
-    width: 377px;
-    height: 49px;
 }  
 .fa-location-dot{
     font-size: 18px;
@@ -105,6 +105,7 @@ button{
     color: white;
     border-radius: 0PX 15PX 15PX 0px;
     border: 1px solid #0065FC;
+    width: 132px;
 
 }
 .search-ville {
@@ -134,7 +135,7 @@ margin-bottom: 15px;
 .title-Filtres{
     font-size: 18px;
     font-weight: bold;
-    padding-top: 8px;
+    padding-top: 15px;
 }
 
 .icon-border:hover{
@@ -146,6 +147,7 @@ margin-bottom: 15px;
     display: flex;
     gap: 10px;
     align-items: center;
+    padding:5px;
 }
 .icon-info{
     width: 30px;
@@ -165,6 +167,7 @@ margin-bottom: 15px;
 }
 
 .hebergements-and-populaires section {
+    
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
@@ -277,6 +280,13 @@ margin-bottom: 15px;
 
 }
 
+.desktop{
+    display: inline;
+}
+.mobile{
+    display: none;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -312,9 +322,150 @@ margin-bottom: 15px;
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .Activite-title-cards{
+        height:70px;
+    }
+    .Activite-cards img{
+        height: 200px;
+    }
+    .desktop{
+        display: inline;
+    }
+    .mobile{
+        display: none;
+    }
+    .search-ville{
+        width: 30%;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    .main-container{
+        padding: 0;
+    }
+
+    /* .logo.. */
+
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-header{
+        display: flex;
+        justify-content: center;
+    }
+    .nav{
+        width: 100%;
+
+    }
+    .nav ul{
+        padding-right: 40px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav ul li a:hover {
+        border-bottom: 3px solid blue;
+        border-top: none;
+        width: 100%;
+    }
+    /* .title.. */
+    .Title1{
+        padding-left: 13px;
+    }
+    .search-bar {
+        width: 100%;
+    }
+    .footer{
+        display:contents;
+    }
+
+    .Filtres{
+        display: contents;
+       
+    }
+    .filtres-icon{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 96%;
+    }
+    .title-Filtres{
+        padding-bottom: 15px;
+    }
+
+    .hebergements-and-populaires{
+        flex-direction: column-reverse;
+    }
+    .populaires-cards{
+        display: contents;
+    }
+    .hebergements-card{
+        display: contents;
+    }
+    .hebergements{
+        background-color: white;
+   }
+   .hebergements-and-populaires section{
+    border-radius: unset;
+    padding: 0;
+    width: 95%;
+    margin-left: 8px;
+
+
+   }
+   .card{
+    margin-top: 33px;
+   }
+   .card-txt{
+    font-size: 13px;
+    margin: 0;
+   }
+    .populaires{
+        margin-top: 0;
+    }
+   button{
+    position: absolute;
+    right: 5px;
+    padding: 15px;
+    border-radius: 15px 15px 15px 15px;
+    width: 50px;
+   }
+    
+    .search-ville{
+        width: 95%;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: inline;
+    }
+    .populaires-title{
+        padding-top: 25px;
+    }
+    .Marseille-title{
+        padding-top: 25px;
+    }
+    .Activite{
+        display:contents;
+        margin: 30px;
+
+    }
+    .Activites{
+        padding-left: 20px;
+        width: 90%;
+    }
+    .Activite-title{
+        padding-top: 50px;
+        padding-bottom: 39px;
+    }
+    .footer-text{
+        background-color: #F2F2F2;
+        width: 92%;
+    }
+
 }
