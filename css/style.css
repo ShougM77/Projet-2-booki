@@ -64,34 +64,44 @@ a {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 10px;
+    width: 100%;
+    height: 79px;
 }
 
-.logo {
-    width: 60px;
-    
-}
-.nav ul
-    {list-style-type: none;
-       
-        display: flex;
-    
-}
-.nav ul li{
-    margin-right: 20px;
-    
-}
-.nav ul li a:hover {
-    border-top: 3px solid #0065FC;
-    width: 50%;
 
+
+
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-barsize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 90px;
     
+}
+
+.nav-barsize:hover {
+    border-top: 2px solid #0065FC;
+    color: #0065FC;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /****** Barre recherche ***********/
 
 .search-bar{
     display: flex;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
+    padding-top: 15px;
 }  
 .fa-location-dot{
     font-size: 18px;
@@ -359,20 +369,20 @@ margin-bottom: 15px;
         display: flex;
         justify-content: center;
     }
-    .nav{
+    .nav-bar{
         width: 100%;
 
     }
-    .nav ul{
-        padding-right: 40px;
-        display: flex;
-        justify-content: space-around;
+    .nav-barsize{
+        width: 100%;
+        height: 40px;
     }
 
-    .nav ul li a:hover {
+    .nav-barsize:hover {
         border-bottom: 3px solid blue;
         border-top: none;
         width: 100%;
+        color: #0065FC;
     }
     /* .title.. */
     .Title1{
@@ -401,6 +411,9 @@ margin-bottom: 15px;
 
     .hebergements-and-populaires{
         flex-direction: column-reverse;
+        width: 110%;
+        margin-left: -16px;
+
     }
     .populaires-cards{
         display: contents;
@@ -408,16 +421,14 @@ margin-bottom: 15px;
     .hebergements-card{
         display: contents;
     }
-    .hebergements{
+    .hebergement2{
         background-color: white;
    }
    .hebergements-and-populaires section{
     border-radius: unset;
-    padding: 0;
+    padding: 0px;
     width: 95%;
-    margin-left: 8px;
-
-
+    margin-left: 12px;
    }
    .card{
     margin-top: 33px;
